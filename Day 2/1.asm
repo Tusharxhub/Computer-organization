@@ -1,22 +1,19 @@
 ;write a 8085 assembly program to add two 8 bit stored at memory location 2050H & 2051H. Store the 8 bit sum at 2052H
 
-	LDA 2050H      ; Load first operand into A
-	MOV B, A       ; Save first operand in B
-	LDA 2051H      ; Load second operand into A
-	ADD B          ; A = A + B  (Flags affected)
-	STA 2052H      ; Store 8-bit sum (lower byte) at 2052H
-	JNC NCARRY     ; If no carry, jump
-	MVI A,01H      ; Carry = 1
-	STA 2053H      ; Store carry flag value
-	HLT
-NCARRY: MVI A,00H      ; Carry = 0
-	STA 2053H
-	HLT
+	; Program: Add two 8-bit numbers stored at 2050H & 2051H
+; Result: 8-bit sum stored at 2052H (carry ignored)
+; Processor: 8085
+
+        LDA 2050H       ; Load first number into A
+        MOV B, A        ; Copy it to register B
+        LDA 2051H       ; Load second number into A
+        ADD B           ; A = A + B  (carry ignored)
+        STA 2052H       ; Store result at 2052H
+        HLT             ; Halt the program
+
 
 ; Output:
-; 2050H = AAH (170), 2051H = 90H (144) => 170 + 144 = 314 = 013AH
-; Sum low byte (3AH) stored at 2052H, carry (1) stored at 2053H.
-
-
-
-
+;2050H = 25H  (37 decimal)
+;2051H = 34H  (52 decimal)
+;2052H = 59H  (89 decimal)
+;2053H = 00H  (No carry)
