@@ -1,4 +1,4 @@
-; WAP 8085 program to subtract byte at 2061H from byte at 2060H
+; WAP to 8085 program to subtract byte at 2061H from byte at 2060H
 ; Operation: (2060H) - (2061H)
 ; Store 8-bit result at 2062H. (Two's complement if borrow occurs.)
 ; Optional: store borrow (if generated) at 2063H (0 = no borrow, 1 = borrow)
