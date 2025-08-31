@@ -3,27 +3,19 @@
 
 
 ; Initialize memory locations
-MVI A, 00H        ; Clear accumulator
-STA 2050H        ; Store initial quotient as 0
-STA 2051H        ; Store initial remainder as 0
+        LDA 2010H       ; Load dividend into A
+        MOV B, A        ; Store dividend in B (temp)
+        LDA 2011H       ; Load divisor into A
+        MOV C, A        ; Store divisor in C
+        MVI D, 00H      ; Initialize quotient = 0
 
-; Load dividend and divisor
-LDA 2010H        ; Load dividend
-MOV B, A        ; Move dividend to B
-LDA 2011H        ; Load divisor
-MOV C, A        ; Move divisor to C
+DIV_LOOP: CMP C          ; Compare A (dividend) with divisor
+          JC DIV_DONE    ; If A < C, division is complete
+          SUB C          ; A = A - C (subtract divisor)
+          INR D          ; Increment quotient
+          JMP DIV_LOOP   ; Repeat
 
-; Division using repeated subtraction
-DIV_LOOP:
-    CMP C        ; Compare B (dividend) with C (divisor)
-    JC DIV_DONE  ; If B < C, division is done
-    SUB C        ; Subtract C from B
-    INX D        ; Increment quotient
-    JMP DIV_LOOP
-
-DIV_DONE:
-    ; Store quotient and remainder
-    STA 2050H    ; Store quotient
-    LDA 2010H    ; Load original dividend
-    SUB 2050H    ; Subtract quotient from dividend
-    STA 2051H    ; Store remainder
+DIV_DONE: STA 2051H      ; Store remainder (A)
+          MOV A, D       ; Move quotient into A
+          STA 2050H      ; Store quotient
+          HLT
