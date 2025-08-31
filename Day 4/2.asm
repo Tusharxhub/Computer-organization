@@ -1,1 +1,1 @@
-; wap to 
+; Write a 8085 Assembly Language Program to divide the contents of memory location 2010H by the contents of memory location 2011H using the method of repeated subtraction. Store the quotient at 2050H and remainder at 2051H.
