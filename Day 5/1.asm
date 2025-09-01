@@ -1,1 +1,1 @@
-; write a 8085 program to find once and twos complement of a number
+; Write an 8085 assembly program to find the one’s complement and two’s complement of a given number.
