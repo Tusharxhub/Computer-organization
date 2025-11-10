@@ -1,0 +1,1 @@
+;write an 8085 assembly language programme to find smallest number from an array
