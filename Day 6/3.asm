@@ -1,0 +1,1 @@
+;write to 8085 assembly language programme to arrange an array of data in ascending and descending order.
