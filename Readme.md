@@ -1,14 +1,12 @@
 
-
-
 # 🖥️ Computer Organization – Lab Codes
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Tusharxhub/Computer-organization?style=for-the-badge&color=brightgreen)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Tusharxhub/Computer-organization?style=for-the-badge&color=blue)
 ![GitHub stars](https://img.shields.io/github/stars/Tusharxhub/Computer-organization?style=for-the-badge&color=yellow)
 
-A **collection of lab codes** for the *Computer Organization* course, uploaded **every Monday** as part of my academic work.  
-This repository serves as a personal archive, reference, and resource for anyone learning **low-level computing concepts**, **assembly language programming**, and **hardware fundamentals**.
+A **collection of assembly lab codes** created as part of my *Computer Organization* coursework.  
+Each program demonstrates fundamental operations in **8085 microprocessor assembly language**, focusing on arithmetic, logical, and memory-based instructions.
 
 ---
 
@@ -17,74 +15,77 @@ This repository serves as a personal archive, reference, and resource for anyone
 ```
 
 📁 Computer-organization
-├── 📜 Week-01/      # Introductory programs
-├── 📜 Week-02/      # Basic Assembly Instructions
-├── 📜 Week-03/      # Arithmetic & Logical Operations
-├── 📜 Week-04/      # Memory Access & Data Movement
-├── 📜 Week-05/      # Advanced Instructions & Experiments
+├── 📜 Day 1/   # Basic introduction to 8085 assembly
+├── 📜 Day 2/   # Subtraction and accumulator operations
+├── 📜 Day 3/   # Addition and carry/borrow handling
+├── 📜 Day 4/   # Division and program clarity refinements
+├── 📜 Day 5/   # Finding largest/smallest numbers
+├── 📜 Day 6/   # Array and looping logic in assembly
 └── 📜 README.md
 
 ````
 
-> **Note:** Each folder is organized by **week** for easier navigation and revision.
+> **Note:** Each *Day* corresponds to a specific lab session or topic covered in class.
+
+---
+
+## 🧠 Learning Focus
+
+By studying these programs, you’ll gain hands-on experience in:
+- Understanding **8085 microprocessor architecture**  
+- Writing and debugging **assembly-level code**  
+- Practicing **data transfer, arithmetic, and logical instructions**  
+- Implementing **control flow and looping** in assembly  
+- Enhancing readability through structured commenting and labeling  
+
+---
+
+## 🛠️ Tools Used
+
+- **EMU8086** or **GNUSim8085** emulator  
+- **8085 Assembly Language**  
+- Development environment: *Adamas University Lab*  
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Tusharxhub/Computer-organization.git
+````
+
+2. Navigate to any day’s folder:
+
+   ```bash
+   cd Computer-organization/Day\ 3
+   ```
+3. Open the `.asm` file in your emulator (EMU8086 or GNUSim8085).
+4. Assemble, run, and observe the program execution.
 
 ---
 
 ## 📅 Update Schedule
 
-🗓 **Every Monday** — new lab codes will be added as the semester progresses.  
-This ensures the repository stays up-to-date and aligned with ongoing coursework.
-
----
-
-## 🎯 Learning Outcomes
-
-By following along with these codes, you will:
-
-- Understand **fundamental computer architecture concepts**  
-- Learn **8085/8086 Assembly Language Programming**  
-- Practice **instruction execution**, **data movement**, and **memory access**  
-- Explore **arithmetic and logical operations** at the processor level  
-- Gain hands-on experience with **lab-based problem-solving**
-
----
-
-## 🛠️ Tech & Tools Used
-
-- **8085/8086 Microprocessor Assembly**
-- **EMU8086**, **GNUSim8085**, or equivalent simulators
-- **Lab Environment:** *Adamas University*
-
----
-
-## 📌 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Tusharxhub/Computer-organization.git
-````
-
-2. Open the desired week's folder
-3. Load the `.asm` or `.txt` file in your preferred simulator
-4. Run and observe code execution
-5. Modify and experiment to deepen understanding
+🗓 Updated **every Monday** with new or improved assembly programs.
+Each commit includes clear comments and refined structure for better readability.
 
 ---
 
 ## 🤝 Contributions
 
-This is a **personal academic repository**, but community contributions are welcome.
-If you find improvements or optimizations:
+This is a **personal academic project**, but community contributions are welcome.
+If you’d like to optimize, clean, or extend any program:
 
-1. Fork the repository
-2. Make your changes
-3. Submit a Pull Request
+* Fork the repo
+* Make your changes
+* Submit a pull request
 
-> Collaboration helps strengthen this open educational resource.
+> 💡 Even small improvements help others learn better.
 
 ---
 
-## 📧 Contact
+## 📬 Contact
 
 📧 [*Email*](mailto:t.k.d.dey2033929837@gmail.com)
 🔗 [*GitHub*](https://github.com/Tusharxhub)
@@ -92,8 +93,3 @@ If you find improvements or optimizations:
 
 ---
 
-> 🚀 *Learning Computer Organization isn’t just about coding, it’s about understanding how computers truly work from the inside out.*
-
-
-It’ll give your README the same sleek look as your other repos.
-```
