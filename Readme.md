@@ -53,7 +53,7 @@ By studying these programs, you’ll gain hands-on experience in:
 1. Clone this repository:
    ```bash
    git clone https://github.com/Tusharxhub/Computer-organization.git
-````
+
 
 2. Navigate to any day’s folder:
 
@@ -65,14 +65,14 @@ By studying these programs, you’ll gain hands-on experience in:
 
 ---
 
-## 📅 Update Schedule
+ 📅 Update Schedule
 
 🗓 Updated **every Monday** with new or improved assembly programs.
 Each commit includes clear comments and refined structure for better readability.
 
 ---
 
-## 🤝 Contributions
+ 🤝 Contributions
 
 This is a **personal academic project**, but community contributions are welcome.
 If you’d like to optimize, clean, or extend any program:
@@ -85,7 +85,7 @@ If you’d like to optimize, clean, or extend any program:
 
 ---
 
-## 📬 Contact
+ 📬 Contact
 
 📧 [*Email*](mailto:t.k.d.dey2033929837@gmail.com)
 🔗 [*GitHub*](https://github.com/Tusharxhub)
